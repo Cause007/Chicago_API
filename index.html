@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramics Gallery</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- start of Container for Posters -->
+    <div class="title">Ceramics Gallery</div>
+    <div class="container">
+        <div class="gallery">
+            <button data-modal-target="#modal" class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/1941.701a-b - Pair of Cups.jpg" alt="42566" class="gallery__img">
+            </button>
+            <button data-modal-target="#modal" class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/1913.342 - Tankard (Hanap) with Tulips, Hyacinths, Roses, and....jpg" alt="69109" class="gallery__img">
+            </button>
+            <button data-modal-target="#modal" class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/1984.240 - Pitcher.jpg" alt="102295" class="gallery__img">
+            </button>
+            <button data-modal-target="#modal" class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/1959.5 - Oribe-Type Ewer.jpg" alt="9512" class="gallery__img">
+            </button>
+            <button data-modal-target="#modal" class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/1966.395 - Wine Cistern.jpg" alt="25853" class="gallery__img">
+            </button>
+            <button data-modal-target="#modal" class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img src="images/1957.490a - Ewer.jpg" alt="6596" class="gallery__img">
+            </button>
+        </div>
+        <div class="modal" id="modal">
+            <!-- Insert modal in JS -->
+        </div>
+    <div id="overlay"></div>
+    </div>
+</body>
+</html>
